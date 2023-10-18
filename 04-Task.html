@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uttrayan</title>
+</head>
+   <script>
+    
+    const today = new Date();
+    const uttrayan = new Date(today.getFullYear(), 0, 14);
+
+    if (today.getMonth() == 11 && today.getDate() > 25){
+        uttrayan.setFullyear(uttrayan.getFullYear() + 1);
+    }
+   
+     const one_day = 1000 * 60 * 60 * 24;
+     const diff = Math.ceil((uttrayan.getTime() - today.getTime()) / (one_day));
+
+     document.write(`${diff} days left until next Uttrayan.`);
+   </script>
+
+<body>
+    <!-- <script>
+      function capitalize_First_Letter(text) {
+
+        let words = text.split(" ");
+
+        for (let i = 0; i < words.length; i++) {
+
+          words[i] = words[i].charAt(0)
+                     .toUpperCase()
+                     + words[i].slice(1);
+        }
+        return words.join(" ");
+      }
+      const text = 'the quick brown fox';
+      const result = capitalize_First_Letter(text);
+      document.write(result); 
+    
+    </script> -->
+
+    </body>
+
+</html>

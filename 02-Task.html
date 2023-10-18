@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Uppercase</title>
+
+
+    <script>
+
+    // var a = window.prompt ("Enter the string");
+    // var a =   'the quick brown fox' ;
+    // document.write(a + '<br/>');
+
+    // var first = a.charAt(0);
+    // document.write(first + "<br/>");     // t
+    // document.write(first.toUpperCase() + "<br/>");   // T
+    
+    // var remain = a.slice(1);
+    // document.write(remain);         // he quick brown fox
+     
+    // var final = first.toUpperCase() + remain ;
+    // document.write(final);
+
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- charAt(): To get a char at an index. -->
+    <!-- toUpperCase(): upper Case characters -->
+    <!-- slice(): slide / remove any char from string -->
+
+
+    <script>
+
+        let name =  'the quick brown fox' ;
+        document.write(name + '<br/>');
+        
+        let firstWorld = (Str) => Str.charAt(0).toUpperCase()   
+                                + Str.slice(1).toLowerCase();
+
+        let final = (Str) => Str.split (" ")
+                            .map(firstWorld).join (" ");
+
+        document.write(final(name)); 
+   
+   </script>
+    
+</body>
+<script>
+
+
+</script>
+</html>
