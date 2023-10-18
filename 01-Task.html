@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels count</title>
+
+   <script>
+     
+    //  let a = 'The quick brown fox' ;
+        let a = window.prompt("Enter your thought")
+        document.write( "Q.1 : "  +a + '<br/> <br/>');
+   
+      // Using regex
+
+     let regexB = /[aeiou]/gi;    // i = use for a and A both
+     let regexC = /[^aeiou]/gi;   // ^ = !
+
+     document.write(`Vowel count : ${a.match(regexB).length} <br/>`);
+     document.write(`Counter count : ${a.match(regexC).length}`);
+
+   </script>
+
+
+</head>
+<body>
+    <!-- <h4>Good morning</h4> -->
+    
+   </body>
+</html>
